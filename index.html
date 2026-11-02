@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Szkoła ponadgimnazjalna</title>
+
+<style>
+body {
+    font-family: Arial;
+}
+
+#baner {
+    background: #aaa;
+    height: 50px;
+    text-align: center;
+}
+
+#baner h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#lewy {
+    background: #aaa;
+    width: 29%;
+    height: 280px;
+    float: left;
+    text-align: center;
+}
+
+#prawy {
+    background: #aaa;
+    width: 71%;
+    height: 280px;
+    float: left;
+    overflow: auto;
+}
+
+#stopka {
+    clear: both;
+    background: #aaa;
+    height: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+ul {
+    text-align: left;
+    font-size: 12px;
+}
+
+input {
+    width: 80px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+td, th {
+    border: 1px dotted gray;
+    padding: 5px;
+    text-align: left;
+}
+
+th:last-child, td:last-child {
+    width: 405px;
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="baner">
+<h1>Projekt strony internetowej szkoły ponadgimnazjalnej</h1>
+</section>
+
+<section id="lewy">
+
+<h3>Do pobrania</h3>
+
+<ul>
+<li><a href="baza/zapytania.txt">zapytania SQL</a></li>
+<li><a href="baza/szkola_nowa.sql">baza danych</a></li>
+</ul>
+
+<hr>
+
+<h3>Wyznaczenie najwyższej średniej</h3>
+
+<ul>
+<li>Polak <input type="text" id="a"></li>
+<li>Nowak <input type="text" id="b"></li>
+<li>Rysik <input type="text" id="c"></li>
+</ul>
+
+<button onclick="wynik.innerHTML=Math.max(Number(a.value),Number(b.value),Number(c.value))">
+Wyznacz
+</button>
+
+<h3>Najwyższa średnia:</h3>
+<p id="wynik"></p>
+
+</section>
+
+<section id="prawy">
+
+<table>
+<tr>
+<th>Treść zapytania</th>
+<th>Zrzut ekranu</th>
+</tr>
+<tr>
+<td>Treść zapytania</td>
+<td>zrzut1.jpg</td>
+</tr>
+<tr>
+<td>Treść zapytania</td>
+<td>zrzut2.jpg</td>
+</tr>
+<tr>
+<td>Treść zapytania</td>
+<td>zrzut3.jpg</td>
+</tr>
+<tr>
+<td>Treść zapytania</td>
+<td>zrzut4.jpg</td>
+</tr>
+</table>
+
+</section>
+
+<section id="stopka">
+<h4>Stronę wykonał: WPISZ_PESEL</h4>
+</section>
+
+</body>
+</html>
